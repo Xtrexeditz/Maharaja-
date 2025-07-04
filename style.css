@@ -1,0 +1,144 @@
+
+/* Reset & Fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f1f5f9;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #1e40af, #1e3a8a);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* Bus Section */
+.buses h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #1e40af;
+}
+
+.bus-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.bus-card {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  width: 300px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.bus-card:hover {
+  transform: translateY(-5px);
+}
+
+.bus-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #1e3a8a;
+}
+
+/* Booking Section */
+.booking {
+  background: #ffffff;
+  padding: 60px 20px;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  margin-top: 60px;
+}
+
+.booking h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #1e40af;
+  margin-bottom: 30px;
+}
+
+.booking form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.booking input,
+.booking button {
+  padding: 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+}
+
+.booking input {
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+}
+
+.booking button {
+  background: #f97316;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.booking button:hover {
+  background: #ea580c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .bus-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bus-card {
+    width: 90%;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+}
